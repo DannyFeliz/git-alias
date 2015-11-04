@@ -46,3 +46,4 @@ git config --global alias.rh2 'reset HEAD^^ --hard'
 git config --global alias.ls 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate' # log with pretty format
 git config --global alias.ll 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat' # log with pretty format and changed files
 git config --global alias.lol 'log --pretty=oneline --abbrev-commit --graph --decorat' # log with pretty format and graph timeline
+git config --global alias.loo 'log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\"'
