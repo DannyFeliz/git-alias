@@ -28,6 +28,10 @@ git config --global alias.br branch
 git config --global alias.ff 'diff --word-diff'
 git config --global alias.dc 'diff --cached'
 git config --global alias.rb rebase
+git config --global alias.loo = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s\"
+git config --global alias.mod = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+git config --global alias.lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+git config --global alias.ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
 
 # # Add aliases for some advanced git commands
 git config --global alias.rlog reflog
