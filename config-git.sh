@@ -6,6 +6,12 @@
 # Configuring git to show colors in console
 git config --global color.ui true
 
+# Ignore permissions changes
+git config --global core.fileMode false
+
+# Ignore ^M character (line ending in windows)
+git config --global core.whitespace cr-at-eol
+
 # Add aliases for basic git commands
 git config --global alias.ac '!git add -A && git commit -m'
 git config --global alias.pl '!git pull origin $(git rev-parse --abbrev-ref HEAD)'
